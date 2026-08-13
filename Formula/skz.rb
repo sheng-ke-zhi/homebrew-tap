@@ -1,33 +1,34 @@
 class Skz < Formula
   desc "面向 AI Agent 的胜可知量化研究与实盘交易命令行工具"
   homepage "https://github.com/sheng-ke-zhi/skz-quant-cli"
-  version "0.1.20"
+  version "0.1.21"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.20/skz-aarch64-apple-darwin.tar.gz"
-      sha256 "1fbf833420c843713d921b18646d6388ab8bdcacca30a23f8cb49cb436cccea9"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.21/skz-aarch64-apple-darwin.tar.gz"
+      sha256 "a8394302b25f58bde2adf200867f59780af38e19f9a4426909315fd136dce726"
     end
     on_intel do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.20/skz-x86_64-apple-darwin.tar.gz"
-      sha256 "8b1bef0b5199c038d28493e19cc97e24955d32320f482e6e5318cf380e73ae7c"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.21/skz-x86_64-apple-darwin.tar.gz"
+      sha256 "c06deb77fa7393cdfef7b62ab810027e551eef32e420ed87fc995ebc3b499a74"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.20/skz-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c6a749970d168fe1b551dc924ac30e8a96bdc6d0cef5b62884ff9d19f74345f9"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.21/skz-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e8331e91f7eaf51b2da315e740b0d8663dadb923cdf52ff1a8540fce60d7cc28"
     end
     on_intel do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.20/skz-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7706921e87952107d5259f8b567bbf66f72a990b1c182c795e7f0ce8e9c5e81a"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.21/skz-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "331878a4bac7864c63e77dea634b4a9760d3b1cd74613010b335734df8890cd7"
     end
   end
 
   def install
-    bin.install "skz"
+    libexec.install "skz", "skills"
+    bin.install_symlink libexec/"skz"
   end
 
   test do
