@@ -7,22 +7,22 @@ class Skz < Formula
   on_macos do
     on_arm do
       url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.28/skz-aarch64-apple-darwin.tar.gz"
-      sha256 "0781353ec88f3c1c1a09f2b5d7bea69b84977b71cd2c52e45f2e1b7e9768e2d1"
+      sha256 "43118a762130a6b57003449f51061131337a34af9576547c2366088d9ae385e7"
     end
     on_intel do
       url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.28/skz-x86_64-apple-darwin.tar.gz"
-      sha256 "b675bc89061633fbfff6e0b96ac87532ec02a66e9f7218b078aebff5f226c022"
+      sha256 "65e6b454bc407f5eb566b0d55106082b231da771c35a583976424939ff2b4636"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.28/skz-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e2c83a5770774e87dee9c1406333926f7151c4b51ed44e970a38472e09b50df3"
+      sha256 "b79cdcf51e9ca2c555e5dda481c6c47f4f388d093eff7a74d45bc4f83cab9e43"
     end
     on_intel do
       url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.28/skz-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "a6628fde2ae87cb37f0bf5712e75317a5a899c2b11fde2fac5b0cec5accd56cd"
+      sha256 "c980ebe540684569fa0a1925a5c924052d9f91b445a0591af39c30b888a23777"
     end
   end
 
