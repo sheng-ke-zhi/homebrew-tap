@@ -1,28 +1,28 @@
 class Skz < Formula
   desc "面向 AI Agent 的胜可知量化研究与实盘交易命令行工具"
   homepage "https://github.com/sheng-ke-zhi/skz-quant-cli"
-  version "0.1.40"
+  version "0.1.41"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.40/skz-aarch64-apple-darwin.tar.gz"
-      sha256 "7c2fe5dffa48a61b753af13a8a4cea11f30d15590036f038b38b1abea905ded5"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.41/skz-aarch64-apple-darwin.tar.gz"
+      sha256 "a76d019a38be98480493800d8ff41e51c41f209450084df8b9b9f6421363a1ab"
     end
     on_intel do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.40/skz-x86_64-apple-darwin.tar.gz"
-      sha256 "d88e97ebf2854a3d722def11fa689c8f651b757326f3df86f2ccfa9d5b6aeb9a"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.41/skz-x86_64-apple-darwin.tar.gz"
+      sha256 "8b9a02525b72654b33c3985509f222198a4d8d498f85ff564bdb37371cc00d6b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.40/skz-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d43f659b3289e82050fc0e309bf7079fe2bcf1eb1546df507ead8793944157bc"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.41/skz-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9fa468a71ff6dbdfa247bc4af08ce593746d25beaf3a7e9d0714266ef1f87628"
     end
     on_intel do
-      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.40/skz-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "2c55b83de7e44af55a6b23d5c8a94769040b4d7d051c9ad93c0fc5bfee431073"
+      url "https://github.com/sheng-ke-zhi/skz-quant-cli/releases/download/v0.1.41/skz-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "da6a40af385c7d22678dd5f96a36b7bceb34f955393819973b9a58d9a7a2d6fb"
     end
   end
 
